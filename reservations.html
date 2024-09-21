@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!--[if lt IE 9]> <script
+    src="http://html5shim.googlecode.com/svn/trunk/html5. js">
+    </script>
+    <![endif]-->
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Pacific Trails Resort CS2413 :: Reservations by Ashley Stuart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pacific.css">
+</head>
+<body>
+
+        <!---------------- Wrapper ------------------>
+    <div id="wrapper">
+        <!------------ Header Section --------------->
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <!----------- Navigation Section ------------>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+        <!------------ Main Section ----------------->
+        <main>
+            <h2>Reservations at Pacific Trails</h2>
+            <h3>Contact Us</h3>
+                <p>
+                    Required information is marked with an asterisk(*).
+                </p>
+                <form method="post" action="http://webdevbasics.net/scripts/pacific.php" id="myReservations" name="myReservations">
+                    <label for="myFName">*First Name:</label>
+                    <input type="text" name="myFName" id="myFName" tabindex="1" accesskey="F" required="required">
+
+                    <label for="myLName">*Last Name:</label>
+                    <input type="text" name="myLName" id="myLName" tabindex="2" accesskey="L" required="required">
+
+                    <label for="myEmail">*Email:</label>
+                    <input type="email" name="myEmail" id="myEmail" tabindex="3" accesskey="E" required="required">
+
+                    <label for="myPhone">Phone:</label>
+                    <input type="tel" name="myPhone" id="myPhone" tabindex="4" accesskey="P">
+
+                    <label for="myArrival">*Arrival:</label>
+                    <input type="date" name="myArrival" id="myArrival" tabindex="5" accesskey="A" required="required">
+
+                    <label for="myNights">*Nights:</label>
+                    <input type="number" name="myNights" id="myNights" tabindex="6" min="1" max="14" accesskey="N"
+                           required="required">
+
+                    <label for="myComments">Comments:</label>
+                    <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+
+                    <input type="submit" name="mySubmit" tabindex="8" accesskey="S" class="printHidden" value="Submit Form">
+
+                    <input type="reset" name="myReset" tabindex="9" accesskey="R" class="printHidden" value="Clear">
+
+
+
+                </form>
+           
+        </main>
+        <!------------ Footer Section -------------->
+        <footer>
+            <div id="navBottom">
+                <a href="index.html">Home</a>&nbsp;
+                <a href="yurts.html">Yurts</a>&nbsp;
+                <a href="activities.html">Activities</a>&nbsp;
+                <a href="reservations.html">Reservations</a>&nbsp;
+            </div>
+            <br>Copyright &copy; 2015 Pacific Trails Resort<br>
+            <a href="mailto:ashley@stuart.com">ashley@stuart.com</a>
+        </footer>
+    </div>
+</body>
+</html>
